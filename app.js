@@ -34,11 +34,11 @@ app.post("/", (req,res) =>{
  
     let jsonData= JSON.stringify(data);
   
-    const url = "https://us14.api.mailchimp.com/3.0/lists/f13c0b0e4c";
+    const url = "https://us14.api.mailchimp.com/3.0/lists/{userID}";
 
     const options ={
         method: "POST",
-        auth: "Yuri:3242b406669d13285bc8fd3c700eff3a-us14"
+        auth: "Yuri:{APIkey}"
     }
     
 
